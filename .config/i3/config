@@ -53,6 +53,9 @@ bindsym $mod+Shift+i exec python ./hide.py --hide True
 # Pause button
 bindsym Pause exec playerctl play-pause
 
+# Set screen order
+exec_always --no-startup-id ~/.screenlayout/screensetup-2.sh
+
 # Wallpaper
 # exec --no-startup-id hsetroot -cover ~/wallneon-1.jpg
 exec --no-startup-id feh --randomize --bg-scale ~/.config/Wallpapers/*

@@ -13,6 +13,8 @@ alert = #B2535B
 ;------------;
 
 [bar/PolybarTop]
+monitor = DP-4
+
 line-size = 3
 line-color = #f00
 
@@ -102,6 +104,8 @@ cursor-scroll = ns-resize
 ;------------;
 
 [bar/PolybarBot]
+monitor = DP-4
+
 line-size = 3
 line-color = #f00
 
