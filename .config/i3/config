@@ -222,3 +222,5 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Swap two monitors:
+# exec --no-startup-id i3-msg move workspace to left
