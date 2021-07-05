@@ -5,8 +5,8 @@ background-alt = #444
 foreground = #dfdfdf
 foreground-alt = #555
 primary = #FFF
-secondary = #B2535B
-alert = #B2535B
+secondary = #1793d1
+alert = #1793d1
 
 ;------------;
 ; TOPBAR    ;
@@ -174,55 +174,6 @@ modules-right = filesystem memory cpu temperature
 ; MODULES ;
 ;---------;
 
-[module/backlight]	
-type = internal/backlight
-
-; Use the following command to list available cards:	
-; $ ls -1 /sys/class/backlight/
-card = amdgpu_bl0
-
-; (unreleased)	
-; Use the `/sys/class/backlight/actual-brightness` file	
-; rather than the regular `brightness` file.	
-; Defaults to true unless the specified card is an amdgpu backlight.	
-use-actual-brightness = true
-
-; Enable changing the backlight with the scroll wheel	
-; NOTE: This may require additional configuration on some systems. Polybar will	
-; write to `/sys/class/backlight/${self.card}/brightness` which requires polybar	
-; to have write access to that file.	
-; DO NOT RUN POLYBAR AS ROOT. 	
-; The recommended way is to add the user to the	
-; `video` group and give that group write-privileges for the `brightness` file.	
-; See the ArchWiki for more information:	
-; https://wiki.archlinux.org/index.php/Backlight#ACPI	
-; Default: false	
-enable-scroll = true
-
-; Available tags:	
-;   <label> (default)	
-;   <ramp>	
-;   <bar>	
-format = <label>
-
-; Available tokens:	
-;   %percentage% (default)	
-label = %percentage%%	
-; Only applies if <ramp> is used
-
-ramp-0 = 🌕	
-ramp-1 = 🌔	
-ramp-2 = 🌓	
-ramp-3 = 🌒	
-ramp-4 = 🌑	
-
-; Only applies if <bar> is used	
-bar-width = 10	
-bar-indicator = |	
-bar-fill = ─	
-bar-empty = ─	
-
-
 [module/spotify]
 type = custom/script
 interval = 1
@@ -271,11 +222,11 @@ format = <label-state> <label-mode>
 index-sort = false
 wrapping-scroll = false
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
 ws-icon-3 = 4;
-ws-icon-4 = 5;
+ws-icon-4 = 5;
 ws-icon-5 = 6;;
 ws-icon-6 = 7;;
 ws-icon-7 = 8;;
@@ -290,20 +241,20 @@ label-mode-foreground = #000000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %name%
+label-focused = %name% %icon%
 label-focused-background = 
 label-focused-foreground = ${colors.secondary}
 label-focused-underline = ${colors.secondary}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %name%
+label-unfocused = %name% %icon%
 label-unfocused-padding = 2
 label-unfocused-foreground = ${colors.primary}
 label-unfocused-underline = 
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %name%
+label-visible = %name% %icon%
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
