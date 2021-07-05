@@ -1,6 +1,6 @@
 # jalovisko-dotfiles
 Here lie the configs for the [i3](https://github.com/i3/i3) window manager I made. This is mostly a collection of various stuff I was able to collect online from other people's configs.
-![image](https://user-images.githubusercontent.com/22379984/124523100-8edad780-ddc3-11eb-92e6-337fe1f9ab61.png)
+![image](https://user-images.githubusercontent.com/22379984/124523134-bcc01c00-ddc3-11eb-84c8-5332261054f7.png)
 
 
 ## Arch dependencies
