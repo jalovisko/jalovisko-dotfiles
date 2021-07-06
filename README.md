@@ -1,9 +1,10 @@
 # jalovisko-dotfiles
 Here lie the configs for the [i3](https://github.com/i3/i3) window manager I made. This is mostly a collection of various stuff I was able to collect online from other people's configs.
 ![image](https://user-images.githubusercontent.com/22379984/124523134-bcc01c00-ddc3-11eb-84c8-5332261054f7.png)
+^ On screen: [gotop](https://github.com/cjbassi/gotop), [neofetch](https://github.com/dylanaraps/neofetch.git).
 
 
-## Arch dependencies
+## Pacman dependencies
 Dependencies from ArchLinux's Pacman:
 ```
 sudo pacman -S i3-wm feh compton dunst i3-gaps i3blocks kitty rofi pilseaudio ttf-font-awesome pacaur
