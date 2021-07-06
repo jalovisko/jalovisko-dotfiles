@@ -21,6 +21,8 @@ line-color = #f00
 border-size = 4
 border-color = #00000000
 
+enable-ipc = true
+
 ;------------;
 ; DIMENSIONS ;
 ;------------;
@@ -78,7 +80,7 @@ module-margin-right = 2
 
 modules-left = powermenu backlight-acpi
 modules-center = xwindow
-modules-right = pulseaudio-control wlan date
+modules-right = dunst pulseaudio-control wlan date
 
 tray-position = hidden
 tray-padding = 2
@@ -402,8 +404,8 @@ type = custom/ipc
 initial = 1
 format-foreground = ${colors.yellow}
 
-hook-0 = echo "%{A1:notify-send "DUNST_COMMAND_PAUSE" && polybar-msg hook dunst 2:}%{A}" &
-hook-1 = echo "%{A1:notify-send "DUNST_COMMAND_RESUME" && polybar-msg hook dunst 1:}%{A}" &
+hook-0 = echo "%{A1:dunstctl set-paused true && polybar-msg hook dunst 2:}%{A}" &
+hook-1 = echo "%{A1:dunstctl set-paused false && polybar-msg hook dunst 1:}%{A}" &
 
 [module/pulseaudio]
 type = internal/pulseaudio
