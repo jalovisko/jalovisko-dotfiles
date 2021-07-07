@@ -70,7 +70,7 @@ alert = #B2535B
 ; MISCELLANEOUS ;
 ;---------------;
 
-radius = 0.0
+radius = 10.0
 fixed-center = true
 padding-left = 0
 padding-right = 2
@@ -160,7 +160,7 @@ alert = #B2535B
 ; MISCELLANEOUS ;
 ;---------------;
 
-radius = 0.0
+radius = 10.0
 fixed-center = true
 padding-left = 0
 padding-right = 2
