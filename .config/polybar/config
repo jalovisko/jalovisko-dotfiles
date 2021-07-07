@@ -80,7 +80,7 @@ module-margin-right = 2
 
 modules-left = powermenu backlight-acpi
 modules-center = xwindow
-modules-right = dunst pulseaudio-control wlan date
+modules-right = dunst pulseaudio-control xkeyboard wlan date
 
 tray-position = hidden
 tray-padding = 2
