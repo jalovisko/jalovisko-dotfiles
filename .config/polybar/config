@@ -330,7 +330,7 @@ interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-underline = 
-label-connected = %essid%
+label-connected = %{A1:nm-connection-editor:}%essid%%{A}
 label-connected-foreground = ${colors.primary}
 
 format-disconnected =
@@ -338,6 +338,7 @@ format-disconnected =
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
+label-disconnected = %{A1:nm-connection-editor:}%essid%%{A}
 
 ramp-signal-0 = 
 ramp-signal-1 = 
