@@ -64,6 +64,9 @@ exec --no-startup-id feh --randomize --bg-scale ~/.config/Wallpapers/*
 # exec --no-startup-id sh ~/.config/polybar/launch.sh --shapes
 exec --no-startup-id sh ~/.config/polybar/launch.sh
 
+# Enable genstures
+exec --no-startup-id libinput-gestures-setup start
+
 # Flameshot
 bindsym $mod+Shift+p exec maim -u ~/$(date +%s).png
 
