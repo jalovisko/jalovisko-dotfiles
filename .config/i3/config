@@ -33,7 +33,7 @@ for_window [class="^.*"] border pixel 0
 # exec --no-startup-id compton -b -f
 
 # Picom
-exec --no-startup-id picom -b -f
+exec --no-startup-id picom -b -f --experimental-backends --backend glx
 
 # Gaps
 gaps outer 35
