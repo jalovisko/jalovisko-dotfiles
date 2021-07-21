@@ -40,7 +40,7 @@ gaps outer 35
 gaps inner 30
 
 # Corners
-# border_radius 10
+border_radius 10
 
 # Gaps keybind
 bindsym $mod+z		gaps outer current plus 5
