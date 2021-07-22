@@ -1,6 +1,6 @@
 # jalovisko-dotfiles
 Here lie the configs for the [i3](https://github.com/i3/i3) window manager I made. This is mostly a collection of various stuff I was able to find online packed together + a few modifications of mine.
-![image](https://user-images.githubusercontent.com/22379984/126259640-8a48e55c-86f1-4963-b016-28b5a864e167.png)
+![image](https://user-images.githubusercontent.com/22379984/126691068-d14630b7-9d66-4e78-adbd-a554d7d03d0a.png)
 ^ On screen: [gotop](https://github.com/cjbassi/gotop), [neofetch](https://github.com/dylanaraps/neofetch.git), [peaclock](https://github.com/octobanana/peaclock).
 
 
