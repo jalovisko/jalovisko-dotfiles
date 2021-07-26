@@ -7,6 +7,8 @@ foreground-alt = #555
 primary = #FFF
 secondary = #1793d1
 alert = #1793d1
+arch = #1793d1
+yellow = #ffff00
 
 ;------------;
 ; TOPBAR    ;
@@ -262,7 +264,7 @@ label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %name%
+label-urgent = %name% %icon%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
@@ -350,7 +352,7 @@ ramp-signal-foreground = ${colors.primary}
 [module/pulseaudio-control]
 type = custom/script
 tail = true
-format-underline = ${colors.cyan}
+format-underline = ${colors.arch}
 label-padding = 2
 label-foreground = ${colors.foreground}
 
