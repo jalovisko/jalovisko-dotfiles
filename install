@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Copying the config files..."
+cp -r ".config" ".screenlayout" "~"
+echo "Done"
