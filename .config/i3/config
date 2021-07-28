@@ -164,9 +164,9 @@ set $ws9 "9"
 set $ws10 "10"
 
 # Razer Ornata v2 pause button
-# bindsym XF86AudioPause exec playerctl play-pause
-# bindsym XF86AudioNext exec playerctl next
-# bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPause exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
