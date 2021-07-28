@@ -57,15 +57,16 @@ bindsym Pause exec playerctl play-pause
 exec_always --no-startup-id ~/.screenlayout/screensetup-2.sh
 
 # Wallpaper
-# exec --no-startup-id hsetroot -cover ~/wallneon-1.jpg
 exec --no-startup-id feh --randomize --bg-scale ~/.config/Wallpapers/*
 
 # Polybar
-# exec --no-startup-id sh ~/.config/polybar/launch.sh --shapes
 exec --no-startup-id sh ~/.config/polybar/launch.sh
 
-# Enable genstures
+# Enable gestures
 exec --no-startup-id libinput-gestures-setup start
+
+# Unlock default keyring at login
+exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
 
 # Flameshot
 bindsym $mod+Shift+p exec maim -u ~/$(date +%s).png
@@ -147,7 +148,7 @@ bindsym $mod+a focus parent
 # bindsym $mod+d exec rofi
 
 # run chrome
-bindsym $mod+i exec google-chrome-stable
+bindsym $mod+i exec google-chrome-stable --password-store=gnome --enable-logging --v=1
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.

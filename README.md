@@ -7,7 +7,7 @@ Here lie the configs for the [i3](https://github.com/i3/i3) window manager I mad
 ## Pacman dependencies
 Dependencies from ArchLinux's Pacman:
 ```bash
-sudo pacman -S feh compton dunst i3blocks kitty rofi pulseaudio ttf-font-awesome pacaur flameshot
+sudo pacman -S feh compton dunst i3blocks kitty rofi pulseaudio ttf-font-awesome pacaur flameshot gnome-keyring
 ```
 ## AUR dependencies
 Dependencies from [AUR](https://aur.archlinux.org/), requires [Yay](https://github.com/Jguer/yay) to be installed:
