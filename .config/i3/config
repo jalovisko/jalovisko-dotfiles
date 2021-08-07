@@ -21,6 +21,9 @@ bindsym $mod+Shift+q kill
 # Dmenu
 # bindsym $mod+d exec rofi -theme slate -show drun
 
+# Lock the screen
+bindsym $mod+p exec ~/.config/i3/lock
+
 # Window auto focus
 focus_follows_mouse no
 

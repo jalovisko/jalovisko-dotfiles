@@ -7,12 +7,12 @@ Here lie the configs for the [i3](https://github.com/i3/i3) window manager I mad
 ## Pacman dependencies
 Dependencies from ArchLinux's Pacman:
 ```bash
-sudo pacman -S feh compton dunst i3blocks kitty rofi pulseaudio ttf-font-awesome pacaur flameshot gnome-keyring
+sudo pacman -S feh compton dunst i3blocks kitty rofi pulseaudio ttf-font-awesome pacaur flameshot gnome-keyring imagemagick gawk util-linux wmctrl scrot
 ```
 ## AUR dependencies
 Dependencies from [AUR](https://aur.archlinux.org/), requires [Yay](https://github.com/Jguer/yay) to be installed:
 ```bash
-yay -S i3-gaps-rounded-git google-chrome polybar pulseaudio-control consolas-font ttf-material-icons-git picom-git pacaur libinput-gestures
+yay -S i3-gaps-rounded-git google-chrome polybar pulseaudio-control consolas-font ttf-material-icons-git picom-git pacaur libinput-gestures i3lock-color-git i3lock-fancy-multimonitor
 ```
 Also, a few more packages from AUR but installed with Pacaur (installed in the previous section via Pacman). This is because there is a bug in Yay that prevents some Razer-specific drivers to be installed.
 ```
@@ -25,4 +25,10 @@ Add the user to the `input` group (to allow gestures when using a laptop):
 sudo gpasswd -a $USER input
 ```
 
-
+You may need to do some extra steps to make `i3lock-fancy-multimonitor` to
+work, namely this:
+```bash
+chmod +x ~/.config/i3/lock
+```
+See [here](https://github.com/guimeira/i3lock-fancy-multimonitor) for more if
+it doesn't work.
