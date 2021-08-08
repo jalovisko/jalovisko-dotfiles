@@ -1,8 +1,14 @@
 # jalovisko-dotfiles
 Here lie the configs for the [i3](https://github.com/i3/i3) window manager I made. This is mostly a collection of various stuff I was able to find online packed together + a few modifications of mine.
-![image](https://user-images.githubusercontent.com/22379984/126691068-d14630b7-9d66-4e78-adbd-a554d7d03d0a.png)
+![2021-08-07_14-44](https://user-images.githubusercontent.com/22379984/128611481-721573c0-18fa-4c94-b323-a96abe11fbaf.png)
+![2021-08-07_14-47](https://user-images.githubusercontent.com/22379984/128611487-2cbf8bf3-e19a-49b5-ab6f-8a5b7f54783e.png)
 ^ On screen: [gotop](https://github.com/cjbassi/gotop), [neofetch](https://github.com/dylanaraps/neofetch.git), [peaclock](https://github.com/octobanana/peaclock).
-
+![2021-08-07_15-00](https://user-images.githubusercontent.com/22379984/128611497-d4ccf8b8-f052-4d9b-898b-85befc037154.png)
+^ On screen: [ranger](https://github.com/ranger/ranger) and a picture of [SHODAN](https://en.wikipedia.org/wiki/SHODAN) opened with [feh](https://github.com/derf/feh)
+![2021-08-07_15-19](https://user-images.githubusercontent.com/22379984/128611700-154b607c-4b1e-461d-b9d8-7349da15f9c1.png)
+^ On screen: [Vim](https://github.com/vim/vim)
+![lock](https://user-images.githubusercontent.com/22379984/128611715-96af809b-00e0-478e-8af8-45d673c137ca.png)
+^ On screen: [i3lock-fancy-multimonitor](https://github.com/guimeira/i3lock-fancy-multimonitor)
 
 ## Pacman dependencies
 Dependencies from ArchLinux's Pacman:
