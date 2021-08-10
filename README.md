@@ -10,12 +10,15 @@ Here lie the configs for the [i3](https://github.com/i3/i3) window manager I mad
 ![lock](https://user-images.githubusercontent.com/22379984/128611715-96af809b-00e0-478e-8af8-45d673c137ca.png)
 ^ On screen: [i3lock-fancy-multimonitor](https://github.com/guimeira/i3lock-fancy-multimonitor)
 
-## Pacman dependencies
+## Dependencies
+Some dependencies need to be satisfied before this can be installed.
+
+### Pacman dependencies
 Dependencies from ArchLinux's Pacman:
 ```bash
 sudo pacman -S feh compton dunst i3blocks kitty rofi pulseaudio ttf-font-awesome pacaur flameshot gnome-keyring imagemagick gawk util-linux wmctrl scrot 	zathura zathura-pdf-mupdf
 ```
-## AUR dependencies
+### AUR dependencies
 Dependencies from [AUR](https://aur.archlinux.org/), requires [Yay](https://github.com/Jguer/yay) to be installed:
 ```bash
 yay -S i3-gaps-rounded-git google-chrome polybar pulseaudio-control consolas-font ttf-material-icons-git picom-git pacaur libinput-gestures i3lock-color-git i3lock-fancy-multimonitor
@@ -24,6 +27,9 @@ Also, a few more packages from AUR but installed with Pacaur (installed in the p
 ```
 pacaur -S openrazer-meta polychromatic openrazer-daemon openrazer-driver-dkms
 ```
+
+## Installation
+Just put everything from this repository to your `$HOME` directory. The `install` script does this automatically.
 
 ## Finalizing
 Add the user to the `input` group (to allow gestures when using a laptop):
