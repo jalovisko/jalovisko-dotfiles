@@ -1,5 +1,5 @@
 [colors]
-background = ${xrdb:color0:#222}
+background = #bf24283b
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
@@ -60,7 +60,7 @@ font-4 = "Material Icons: style=Regular: pixelsize=13; 2"
 ; COLORS ;
 ;--------;
 
-background = 0
+background = #bf24283b
 background-alt = #555
 foreground = #dfdfdf
 foreground-alt = #555
@@ -150,7 +150,7 @@ font-4 = "Scientifica:size=11;3"
 ; COLORS ;
 ;--------;
 
-background = 0
+background = #bf24283b
 background-alt = #555
 foreground = #dfdfdf
 foreground-alt = #555
