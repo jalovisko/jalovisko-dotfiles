@@ -517,7 +517,7 @@ bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
-[[module/battery]
+[module/battery]
 type = internal/battery
 ; This is useful in case the battery never reports 100% charge
 full-at = 99
