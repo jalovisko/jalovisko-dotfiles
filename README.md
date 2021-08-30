@@ -52,3 +52,7 @@ Install os-prober (`sudo pacman -S os-prober`) if you want Windows to be detecte
 # (requires os-prober installed)
 GRUB_DISABLE_OS_PROBER=false
 ```
+Then run
+```
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
