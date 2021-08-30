@@ -44,3 +44,11 @@ chmod +x ~/.config/i3/lock
 ```
 See [here](https://github.com/guimeira/i3lock-fancy-multimonitor) for more if
 it doesn't work.
+
+### GRUB
+Install os-prober (`sudo pacman -S os-prober`) if you want Windows to be detected in GRUB. Then add this to `/etc/default/grub`:
+```
+# Allows detection of other OS in other partitions
+# (requires os-prober installed)
+GRUB_DISABLE_OS_PROBER=false
+```
