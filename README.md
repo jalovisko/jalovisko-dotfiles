@@ -38,7 +38,9 @@ pacaur -S openrazer-meta polychromatic openrazer-daemon openrazer-driver-dkms
 ```
 
 ## Installation
-Just put everything from this repository to your `$HOME` directory. The `install` script does this automatically.
+Just put everything (except for the `core` folder) from this repository to your `$HOME` directory. The `install` script does this automatically.
+
+The `core` directory corresponds to the root `/` folder of a Linux filesystem. So, for example, `./core/etc/X11/` corresponds to `/etc/X11/` on your machine. The files in `core` are better to be not used unles you know what you are doing. They are needed mainly to enable support of laptops with two GPUs.
 
 ## Finalizing
 Add the user to the `input` group (to allow gestures when using a laptop):
