@@ -16,7 +16,16 @@ Some dependencies need to be satisfied before this can be installed.
 ### Pacman dependencies
 Dependencies from ArchLinux's Pacman:
 ```bash
-sudo pacman -S feh compton dunst i3blocks kitty rofi pulseaudio ttf-font-awesome pacaur flameshot gnome-keyring imagemagick gawk util-linux wmctrl scrot 	zathura zathura-pdf-mupdf
+sudo pacman -S feh compton dunst i3blocks kitty rofi pulseaudio ttf-font-awesome pacaur flameshot gnome-keyring imagemagick gawk util-linux wmctrl scrot 	zathura zathura-pdf-mupdf xorg-xrandr
+```
+
+In case of having an AMD GPU:
+```bash
+sudo pacman -S mesa xf86-video-amdgpu vulkan-radeon
+```
+In case of having an Nvidia GPU:
+```bash
+sudo pacman -S nvidia nvidia-utils nvidia-settings nvidia-prime
 ```
 ### AUR dependencies
 Dependencies from [AUR](https://aur.archlinux.org/), requires [Yay](https://github.com/Jguer/yay) to be installed:
