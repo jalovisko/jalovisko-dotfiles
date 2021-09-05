@@ -67,3 +67,11 @@ Then run
 ```
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
+
+### Polybar audio sinks
+In Polybar, you will see the full name of your sink. You'd need to get the
+correct sink device name if you want to assign a shorter nickname. They can be
+obtained by
+```
+pacmd list-sinks  | grep -e 'name:'  -e 'alsa.device ' -e 'alsa.subdevice '
+```
