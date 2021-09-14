@@ -60,7 +60,8 @@ bindsym Pause exec playerctl play-pause
 exec_always --no-startup-id ~/.screenlayout/screensetup-2.sh
 
 # Wallpaper
-exec --no-startup-id feh --randomize --bg-scale ~/.config/Wallpapers/*
+# (this is not needed much because of dualmon.sh, but use if needed)
+# exec --no-startup-id feh --randomize --bg-scale ~/.config/Wallpapers/*
 
 # Polybar
 exec --no-startup-id sh ~/.config/polybar/launch.sh
