@@ -30,7 +30,7 @@ sudo pacman -S nvidia nvidia-utils nvidia-settings nvidia-prime
 ### AUR dependencies
 Dependencies from [AUR](https://aur.archlinux.org/), requires [Yay](https://github.com/Jguer/yay) to be installed:
 ```bash
-yay -S i3-gaps-rounded-git google-chrome polybar pulseaudio-control consolas-font ttf-material-icons-git picom-git pacaur libinput-gestures i3lock-color-git i3lock-fancy-multimonitor ttf-material-icons-git
+yay -S i3-gaps-rounded-git google-chrome polybar pulseaudio-control consolas-font ttf-material-icons-git picom-git pacaur libinput-gestures i3lock-color-git i3lock-fancy-multimonitor ttf-material-icons-git ntp bash-completion
 ```
 Also, a few more packages from AUR but installed with Pacaur (installed in the previous section via Yay). This is because there is a bug in Yay that prevents some Razer-specific drivers to be installed.
 ```
@@ -55,6 +55,11 @@ chmod +x ~/.config/i3/lock
 ```
 See [here](https://github.com/guimeira/i3lock-fancy-multimonitor) for more if
 it doesn't work.
+
+To allow time sync,  enable the ntp systemd service:
+```
+sudo systemctl enable --now ntpdate.service
+```
 
 ### GRUB
 Install os-prober (`sudo pacman -S os-prober`) if you want Windows to be detected in GRUB. Then add this to `/etc/default/grub`:
