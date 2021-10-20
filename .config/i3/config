@@ -75,19 +75,6 @@ exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,s
 # Flameshot
 bindsym $mod+Shift+p exec maim -u ~/$(date +%s).png
 
-# Audio
-#bindsym XF86AudioPlay exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
-
-#bindsym XF86AudioNext exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
-
-#bindsym XF86AudioPrev exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
-
-bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+
-
-bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%-
-
-bindsym XF86AudioMute exec amixer set Master toggle
-
 # Screenshot capture
 bindsym Print       exec flameshot full
 bindsym Shift+Print exec flameshot gui
@@ -167,10 +154,13 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-# Razer Ornata v2 pause button
+# Razer Ornata media keys
 bindsym XF86AudioPause exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%-
+bindsym XF86AudioMute exec amixer set Master toggle
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
