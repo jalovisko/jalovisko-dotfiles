@@ -85,8 +85,8 @@ bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons
 # switching window with win+tab
 bindsym $mod+Tab exec --no-startup-id rofi -show window
 
-# switch layout
-bindsym $mod+space exec ~/.config/i3/i3-keyboard-layout cycle us ru
+# default layouts
+exec --no-startup-id setxkbmap -model pc105 -layout us,ru -variant intl, -option grp:alt_shift_toggle
 
 # change focus
 bindsym $mod+j focus left
