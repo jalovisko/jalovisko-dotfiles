@@ -1,5 +1,5 @@
-set $mod Mod1
-set $sup Mod4
+set $mod Mod4
+set $sup Mod1
 
 font pango:Inconsolata
 
