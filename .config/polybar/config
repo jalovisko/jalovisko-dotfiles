@@ -438,15 +438,15 @@ format-disconnected =
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 1
 
 date =
-date-alt = " %Y-%m-%d"
+date-alt = " %B %d, %Y"
 
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix =  
+format-prefix =   
 format-prefix-foreground = ${colors.primary}
 format-underline = 
 format-foreground = ${colors.primary}
