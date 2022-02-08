@@ -49,12 +49,9 @@ bottom = false
 ; FONTS ;
 ;-------;
 
-font-0 = consolas: style=Regular: size=12: antialias=true; 3"
-font-1 = "Font Awesome 5 Free: style=Solid: pixelsize=8; 3"
-font-2 = "Font Awesome 5 Free: style=Regular: pixelsize=8; 3"
-font-3 = "Font Awesome 5 Brands: pixelsize=8; 3"
-font-4 = "Material Icons: style=Regular: pixelsize=13; 2"
-
+font-0 = "consolas: style=Regular: size=12: antialias=true; 3"
+font-1 = Hack Nerd Font:pixelsize=12;3
+font-2 = siji:pixelsize=10;1
 
 ;--------;
 ; COLORS ;
@@ -140,11 +137,9 @@ bottom = true
 ; FONTS ;
 ;-------;
 
-font-0 = consolas:style=Regular:size=13:antialias=true;3
-font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=11;3"
-font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=11;3"
-font-3 = "Font Awesome 5 Brands:pixelsize=11;3"
-font-4 = "Scientifica:size=11;3"
+font-0 = "consolas: style=Regular: size=12: antialias=true; 3"
+font-1 = Hack Nerd Font:pixelsize=12;3
+font-2 = siji:pixelsize=10;1
 
 ;--------;
 ; COLORS ;
@@ -238,8 +233,8 @@ label-maxlen = 80
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix = " "
+format-prefix-foreground = ${colors.secondary}
 format-prefix-underline = ${colors.secondary}
 
 label-layout = %layout%
@@ -266,7 +261,7 @@ interval = 25
 
 mount-0 = /
 
-label-mounted =  HD %mountpoint% %percentage_used%% of %total%
+label-mounted =   HD %mountpoint% %percentage_used%% of %total%
 label-mounted-foreground = ${colors.primary}
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.primary}
@@ -277,16 +272,16 @@ format = <label-state> <label-mode>
 index-sort = false
 wrapping-scroll = false
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
+ws-icon-0 = 1;
+ws-icon-1 = 2;
 ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
 ws-icon-6 = 7;
-ws-icon-7 = 8;
-ws-icon-8 = 9;
-ws-icon-default = 
+ws-icon-7 = 8;
+ws-icon-8 = 9;ﭮ
+ws-icon-default = 
 
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
@@ -361,7 +356,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " CPU "
+format-prefix = " CPU "
 format-prefix-foreground = ${colors.primary}
 format-underline = 
 label = %percentage:2%%
@@ -370,7 +365,7 @@ label-foreground = ${colors.primary}
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " RAM "
+format-prefix = "  RAM "
 format-prefix-foreground = ${colors.primary}
 format-underline = 
 label = %percentage_used%%
@@ -378,7 +373,7 @@ label-foreground = ${colors.primary}
 
 [module/wlan]
 type = internal/network
-interface = wlan0
+interface = wlp7s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
@@ -398,7 +393,7 @@ ramp-signal-1 = 
 ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
-ramp-signal-foreground = ${colors.primary}
+ramp-signal-foreground = ${colors.secondary}
 
 [module/pulseaudio-control]
 type = custom/script
@@ -412,7 +407,7 @@ label-foreground = ${colors.foreground}
 # trouble-free but repetitive, or apply only the relevant ones (for example
 # --sink-blacklist is only needed for next-sink).
 # Nicknames for audio devices
-exec = pulseaudio-control --icons-volume " , " --icon-muted " " --sink-nicknames-from "device.description" --sink-nickname "alsa_output.pci-0000_09_00.1.hdmi-stereo:  Monitor" --sink-nickname "alsa_output.usb-Logitech_Logitech_G430_Gaming_Headset-00.analog-stereo:  Headphones" --sink-nickname "alsa_output.usb-Razer_Razer_Kraken_Ultimate_00000000-00.analog-stereo:  Headphones" --sink-nickname "alsa_output.pci-0000_0b_00.4.analog-stereo: Speakers" --sink-nickname "alsa_output.pci-0000_04_00.6.HiFi__hw_Generic__sink: Speakers" listen
+exec = pulseaudio-control --icons-volume " , " --icon-muted " " --sink-nicknames-from "device.description" --sink-nickname "alsa_output.pci-0000_09_00.1.hdmi-stereo:  Monitor" --sink-nickname "alsa_output.usb-Logitech_Logitech_G430_Gaming_Headset-00.analog-stereo:  Headphones" --sink-nickname "alsa_output.usb-Razer_Razer_Kraken_Ultimate_00000000-00.analog-stereo:  Headphones" --sink-nickname "alsa_output.pci-0000_0b_00.4.analog-stereo:蓼 Speakers" --sink-nickname "alsa_output.pci-0000_04_00.6.HiFi__hw_Generic__sink: Speakers" listen
 
 click-right = exec pavucontrol &
 click-left = pulseaudio-control togmute
@@ -446,8 +441,8 @@ date-alt = " %B %d, %Y"
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix =   
-format-prefix-foreground = ${colors.primary}
+format-prefix = " "
+format-prefix-foreground = ${colors.secondary}
 format-underline = 
 format-foreground = ${colors.primary}
 
@@ -456,7 +451,7 @@ label = %date% %time%
 [module/dunst]
 type = custom/ipc
 initial = 1
-format-foreground = ${colors.yellow}
+format-foreground = ${colors.secondary}
 
 hook-0 = echo "%{A1:dunstctl set-paused true && polybar-msg hook dunst 2:}%{A}" &
 hook-1 = echo "%{A1:dunstctl set-paused false && polybar-msg hook dunst 1:}%{A}" &
@@ -469,7 +464,7 @@ format-volume-foreground = ${colors.primary}
 label-volume = %percentage%%
 label-volume-foreground = ${colors.primary}
 
-label-muted =   muted
+label-muted = "  muted "
 label-muted-foreground = ${colors.secondary}
 
 bar-volume-width = 10
@@ -628,9 +623,9 @@ type = custom/menu
 expand-right = true
 format-spacing = 1
 
-label-open = "  "
-label-open-foreground = ${colors.primary}
-label-close = "  cancel "
+label-open = " "
+label-open-foreground = ${colors.secondary}
+label-close = "   cancel "
 label-close-foreground = ${colors.secondary}
 label-separator = |
 label-separator-foreground = ${colors.primary}

@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # Terminate already running bar instances
 killall -q polybar
@@ -7,5 +7,9 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch bar1 and bar2
-polybar PolybarTop -r &
-polybar PolybarBot -r
+MONITORS=$(xrandr --query | grep " connected" | cut -d" " -f1)
+
+polybar PolybarTop &
+polybar PolybarBot;
+
+echo "Bars launched..."
