@@ -405,13 +405,13 @@ label-foreground = ${colors.foreground}
 # Icons mixed from Font Awesome 5 and Material Icons
 # You can copy-paste your options for each possible action, which is more
 # trouble-free but repetitive, or apply only the relevant ones (for example
-# --sink-blacklist is only needed for next-sink).
+# --node-blacklist is only needed for next-sink).
 # Nicknames for audio devices
-exec = pulseaudio-control --icons-volume " , " --icon-muted " " --sink-nicknames-from "device.description" --sink-nickname "alsa_output.pci-0000_09_00.1.hdmi-stereo:  Monitor" --sink-nickname "alsa_output.usb-Logitech_Logitech_G430_Gaming_Headset-00.analog-stereo:  Headphones" --sink-nickname "alsa_output.usb-Razer_Razer_Kraken_Ultimate_00000000-00.analog-stereo:  Headphones" --sink-nickname "alsa_output.pci-0000_0b_00.4.analog-stereo:蓼 Speakers" --sink-nickname "alsa_output.pci-0000_04_00.6.HiFi__hw_Generic__sink: Speakers" listen
+exec = pulseaudio-control --icons-volume " , " --icon-muted " " --node-nicknames-from "device.description" --node-nickname "alsa_output.pci-0000_09_00.1.hdmi-stereo:  Monitor" --node-nickname "alsa_output.usb-Logitech_Logitech_G430_Gaming_Headset-00.analog-stereo:  Headphones" --node-nickname "alsa_output.usb-Razer_Razer_Kraken_Ultimate_00000000-00.analog-stereo:  Headphones" --node-nickname "alsa_output.pci-0000_0b_00.4.analog-stereo:蓼 Speakers" --node-nickname "alsa_output.pci-0000_04_00.6.HiFi__hw_Generic__sink: Speakers" listen
 
 click-right = exec pavucontrol &
 click-left = pulseaudio-control togmute
-click-middle = pulseaudio-control --sink-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2" next-sink
+click-middle = pulseaudio-control --node-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2" next-node
 scroll-up = pulseaudio-control --volume-max 130 up
 scroll-down = pulseaudio-control --volume-max 130 down
 
