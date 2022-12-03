@@ -63,8 +63,8 @@ exec_always --no-startup-id ~/.screenlayout/screensetup-2.sh
 # (this is not needed much because of dualmon.sh, but use if needed)
 # exec --no-startup-id feh --randomize --bg-scale ~/.config/Wallpapers/*
 
-# Polybar
-exec --no-startup-id sh ~/.config/polybar/launch.sh
+# PyWal
+exec --no-startup-id wal -i ~/.config/Wallpapers/
 
 # Enable gestures
 exec --no-startup-id libinput-gestures-setup start
@@ -222,3 +222,6 @@ bindsym $mod+r mode "resize"
 
 # Swap two monitors:
 # exec --no-startup-id i3-msg move workspace to left
+
+# Polybar
+exec --no-startup-id sh ~/.config/polybar/launch.sh
