@@ -16,7 +16,7 @@ Some dependencies need to be satisfied before this can be installed.
 ### Pacman dependencies
 Dependencies from ArchLinux's Pacman:
 ```bash
-sudo pacman -S feh compton dunst i3blocks kitty rofi pulseaudio ttf-font-awesome flameshot gnome-keyring imagemagick gawk util-linux wmctrl scrot 	zathura zathura-pdf-mupdf xorg-xrandr lightdm lightdm-webkit2-greeter playerctl alsa-utils python-pywal
+sudo pacman -S feh compton dunst i3blocks kitty rofi pulseaudio ttf-font-awesome flameshot gnome-keyring imagemagick gawk util-linux wmctrl scrot 	zathura zathura-pdf-mupdf xorg-xrandr lightdm lightdm-webkit2-greeter playerctl alsa-utils python-pywal qt5ct
 ```
 
 In case of having an AMD GPU:
