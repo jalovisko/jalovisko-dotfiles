@@ -43,3 +43,6 @@ alias ls='ls --color=auto'
 
 #ps1
 export PS1="\[\033[38;5;11m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[\033[38;5;14m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;12m\]\w\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;13m\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
+
+# PyWal for Qt applications:
+export QT_QPA_PLATFORMTHEME=qt5ct
