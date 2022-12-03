@@ -225,3 +225,6 @@ bindsym $mod+r mode "resize"
 
 # Polybar
 exec --no-startup-id sh ~/.config/polybar/launch.sh
+
+# Razer-CLI
+exec --no-startup-id razer-cli -a
