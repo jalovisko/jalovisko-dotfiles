@@ -1,12 +1,15 @@
 [colors]
-background = #bf24283b
-background-alt = #444
+;background = #bf24283b
+background = ${xrdb:color0:#bf24283b}
+;background-alt = #444
+background-alt = ${xrdb:color0:#555}
 ;foreground = ${xrdb:color7:#222}
-foreground = #dfdfdf
-foreground-alt = #555
-primary = #FFF
-secondary = #1793d1
-alert = #1793d1
+;foreground = #dfdfdf
+foreground = ${xrdb:color7:#dfdfdf}
+foreground-alt = ${xrdb:color7:#555}
+primary = ${xrdb:color1:#E1D4AE}
+secondary = ${xrdb:color2:#e60053}
+alert = ${xrdb:color3:#B2535B}
 arch = #1793d1
 yellow = #ffff00
 
@@ -57,13 +60,13 @@ font-2 = siji:pixelsize=10;1
 ; COLORS ;
 ;--------;
 
-background = #bf24283b
-background-alt = #555
-foreground = #dfdfdf
-foreground-alt = #555
-primary = #E1D4AE
-secondary = #e60053
-alert = #B2535B
+background = ${colors.background}
+background-alt = $(colors.background-alt)
+foreground = $(colors.foreground)
+foreground-alt = $(colors.foreground-alt)
+primary = $(colors.primary)
+secondary = $(colors.secondary)
+alert = $(colors.alert)
 
 ;---------------;
 ; MISCELLANEOUS ;
@@ -145,13 +148,13 @@ font-2 = siji:pixelsize=10;1
 ; COLORS ;
 ;--------;
 
-background = #bf24283b
-background-alt = #555
-foreground = #dfdfdf
-foreground-alt = #555
-primary = #E1D4AE
-secondary = #e60053
-alert = #B2535B
+background = ${colors.background}
+background-alt = $(colors.background-alt)
+foreground = $(colors.foreground)
+foreground-alt = $(colors.foreground-alt)
+primary = $(colors.primary)
+secondary = $(colors.secondary)
+alert = $(colors.alert)
 
 ;---------------;
 ; MISCELLANEOUS ;
@@ -398,7 +401,7 @@ ramp-signal-foreground = ${colors.secondary}
 [module/pulseaudio-control]
 type = custom/script
 tail = true
-format-underline = ${colors.arch}
+format-underline = ${colors.secondary}
 label-padding = 2
 label-foreground = ${colors.foreground}
 
@@ -407,7 +410,7 @@ label-foreground = ${colors.foreground}
 # trouble-free but repetitive, or apply only the relevant ones (for example
 # --node-blacklist is only needed for next-sink).
 # Nicknames for audio devices
-exec = pulseaudio-control --icons-volume " , " --icon-muted " " --node-nicknames-from "device.description" --node-nickname "alsa_output.pci-0000_09_00.1.hdmi-stereo:  Monitor" --node-nickname "alsa_output.usb-Logitech_Logitech_G430_Gaming_Headset-00.analog-stereo:  Headphones" --node-nickname "alsa_output.usb-Razer_Razer_Kraken_Ultimate_00000000-00.analog-stereo:  Headphones" --node-nickname "alsa_output.pci-0000_0b_00.4.analog-stereo:蓼 Speakers" --node-nickname "alsa_output.pci-0000_04_00.6.HiFi__hw_Generic__sink: Speakers" listen
+exec = pulseaudio-control --icons-volume " , " --icon-muted " "  --node-nicknames-from "device.description" --node-nickname "alsa_output.pci-0000_09_00.1.hdmi-stereo:  Monitor" --node-nickname "alsa_output.usb-Logitech_Logitech_G430_Gaming_Headset-00.analog-stereo:  Headphones" --node-nickname "alsa_output.usb-Razer_Razer_Kraken_Ultimate_00000000-00.analog-stereo:  Headphones" --node-nickname "alsa_output.pci-0000_0b_00.4.analog-stereo:蓼 Speakers" --node-nickname "alsa_output.pci-0000_04_00.6.HiFi__hw_Generic__sink: Speakers" listen
 
 click-right = exec pavucontrol &
 click-left = pulseaudio-control togmute
@@ -603,7 +606,7 @@ exec = python3 ~/.config/polybar/weather.py
 ;warn-temperature = 60
 
 ;format = <ramp> <label>
-;format-foreground = ${colors.primary}
+;format-foreground = ${colors.secondary}
 ;format-underline = 
 ;format-warn = <ramp> <label-warn>
 ;format-warn-underline = 
