@@ -16,7 +16,7 @@ Some dependencies need to be satisfied before this can be installed.
 ### Pacman dependencies
 Dependencies from ArchLinux's Pacman:
 ```bash
-sudo pacman -S feh compton dunst i3blocks kitty rofi pulseaudio ttf-font-awesome flameshot gnome-keyring imagemagick gawk util-linux wmctrl scrot 	zathura zathura-pdf-mupdf xorg-xrandr lightdm lightdm-webkit2-greeter playerctl alsa-utils
+sudo pacman -S feh compton dunst i3blocks kitty rofi pulseaudio ttf-font-awesome flameshot gnome-keyring imagemagick gawk util-linux wmctrl scrot 	zathura zathura-pdf-mupdf xorg-xrandr lightdm lightdm-webkit2-greeter playerctl alsa-utils python-pywal
 ```
 
 In case of having an AMD GPU:
@@ -36,6 +36,14 @@ Also, a few more packages from AUR but installed with Pacaur (installed in the p
 ```
 pacaur -S openrazer-meta polychromatic openrazer-daemon openrazer-driver-dkms
 ```
+
+Optionally, install [razer-cli](https://github.com/LoLei/razer-cli) to change the color of your Razer pereferals with PyWal:
+```bash
+git clone https://github.com/LoLei/razer-cli.git
+cd razer-cli
+sudo python setup.py install
+
+
 
 ## Installation
 Just put everything (except for the `core` folder) from this repository to your `$HOME` directory. The `install` script does this automatically.
