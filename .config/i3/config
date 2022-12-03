@@ -224,7 +224,9 @@ bindsym $mod+r mode "resize"
 # exec --no-startup-id i3-msg move workspace to left
 
 # Polybar
-exec --no-startup-id sh ~/.config/polybar/launch.sh
+# exec --no-startup-id sh ~/.config/polybar/launch.sh
+exec_always --no-startup-id polybar PolybarTop &
+exec_always --no-startup-id polybar PolybarBot &
 
 # Razer-CLI
-exec --no-startup-id razer-cli -a
+exec --no-startup-id razer-cli -a &
