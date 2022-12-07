@@ -376,6 +376,7 @@ label-foreground = ${colors.primary}
 
 [module/wlan]
 type = internal/network
+; type to get a list of interfaces:  ip link show
 interface = wlp7s0
 interval = 3.0
 
@@ -401,9 +402,9 @@ ramp-signal-foreground = ${colors.secondary}
 [module/pulseaudio-control]
 type = custom/script
 tail = true
-format-underline = ${colors.secondary}
+format-underline = ${colors.primary}
 label-padding = 2
-label-foreground = ${colors.foreground}
+label-foreground = ${colors.primary}
 
 # Icons mixed from Font Awesome 5 and Material Icons
 # You can copy-paste your options for each possible action, which is more
@@ -543,12 +544,14 @@ time-format = %H:%M
 ;   <ramp-capacity>
 ;   <animation-charging>
 format-charging = <animation-charging> <label-charging>
+format-charging-foreground = ${colors.primary}
 ; Available tags:
 ;   <label-discharging> (default)
 ;   <bar-capacity>
 ;   <ramp-capacity>
 ;   <animation-discharging>
 format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-foreground = ${colors.primary}
 ; Available tags:
 ;   <label-full> (default)
 ;   <bar-capacity>
@@ -560,12 +563,14 @@ format-discharging = <ramp-capacity> <label-discharging>
 ;   %time%
 ;   %consumption% (shows current charge rate in watts)
 label-charging = Charging %percentage%%
+label-charging-foreground = ${colors.primary}
 ; Available tokens:
 ;   %percentage% (default) - is set to 100 if full-at is reached
 ;   %percentage_raw%
 ;   %time%
 ;   %consumption% (shows current discharge rate in watts)
 label-discharging = Discharging %percentage%%
+label-discharging-foreground = ${colors.primary}
 ; Available tokens:
 ;   %percentage% (default) - is set to 100 if full-at is reached
 ;   %percentage_raw%
@@ -600,6 +605,7 @@ type = custom/script
 interval = 600
 cursor-click = python3 ~/.config/polybar/weather.py
 exec = python3 ~/.config/polybar/weather.py
+format-foreground = ${colors.primary}
 
 ;type = internal/temperature
 ;thermal-zone = 0
