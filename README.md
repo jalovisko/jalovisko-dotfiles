@@ -16,7 +16,7 @@ Some dependencies need to be satisfied before this can be installed.
 ### Pacman dependencies
 Dependencies from ArchLinux's Pacman:
 ```bash
-sudo pacman -S feh compton dunst i3blocks kitty rofi pulseaudio ttf-font-awesome flameshot gnome-keyring imagemagick gawk util-linux wmctrl scrot 	zathura zathura-pdf-mupdf xorg-xrandr lightdm lightdm-webkit2-greeter playerctl alsa-utils python-pywal qt5ct
+sudo pacman -S feh dunst i3blocks kitty rofi pulseaudio ttf-font-awesome flameshot gnome-keyring imagemagick gawk util-linux wmctrl scrot zathura zathura-pdf-mupdf xorg-xrandr lightdm lightdm-webkit2-greeter playerctl alsa-utils python-pywal qt5ct firefox vim
 ```
 
 In case of having an AMD GPU:
@@ -30,7 +30,7 @@ sudo pacman -S nvidia nvidia-utils nvidia-settings nvidia-prime
 ### AUR dependencies
 Dependencies from [AUR](https://aur.archlinux.org/), requires [Yay](https://github.com/Jguer/yay) to be installed:
 ```bash
-yay -S i3-gaps-rounded-git google-chrome polybar pulseaudio-control consolas-font nerd-fonts-hack picom-git pacaur libinput-gestures i3lock-color-git i3lock-fancy-multimonitor siji-git ntp bash-completion wal-telegram-git python-pywalfox python-wal-steam-git
+yay -S i3-gaps-rounded-git google-chrome polybar pulseaudio-control consolas-font nerd-fonts-hack picom-git pacaur libinput-gestures i3lock-color-git i3lock-fancy-multimonitor siji-git ntp bash-completion wal-telegram-git python-pywalfox python-wal-steam-git wal-telegram-git
 ```
 Also, a few more packages from AUR but installed with Pacaur (installed in the previous section via Yay). This is because there is a bug in Yay that prevents some Razer-specific drivers to be installed.
 ```
@@ -42,8 +42,7 @@ Optionally, install [razer-cli](https://github.com/LoLei/razer-cli) to change th
 git clone https://github.com/LoLei/razer-cli.git
 cd razer-cli
 sudo python setup.py install
-
-
+```
 
 ## Installation
 Just put everything (except for the `core` folder) from this repository to your `$HOME` directory. The `install` script does this automatically.
