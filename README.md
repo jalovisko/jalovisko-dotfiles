@@ -30,7 +30,7 @@ sudo pacman -S nvidia nvidia-utils nvidia-settings nvidia-prime
 ### AUR dependencies
 Dependencies from [AUR](https://aur.archlinux.org/), requires [Yay](https://github.com/Jguer/yay) to be installed:
 ```bash
-yay -S i3-gaps-rounded-git google-chrome polybar pulseaudio-control consolas-font nerd-fonts-hack picom-git pacaur libinput-gestures i3lock-color-git i3lock-fancy-multimonitor siji-git ntp bash-completion wal-telegram-git python-pywalfox python-wal-steam-git wal-telegram-git
+yay -S i3-gaps-rounded-git google-chrome polybar pulseaudio-control consolas-font nerd-fonts-hack picom-git pacaur libinput-gestures i3lock-color-git i3lock-fancy-multimonitor siji-git ntp bash-completion wal-telegram-git python-pywalfox python-wal-steam-git wal-telegram-git ttf-fira-code
 ```
 Also, a few more packages from AUR but installed with Pacaur (installed in the previous section via Yay). This is because there is a bug in Yay that prevents some Razer-specific drivers to be installed.
 ```
