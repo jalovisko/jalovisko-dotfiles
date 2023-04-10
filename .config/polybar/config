@@ -52,7 +52,7 @@ bottom = false
 ; FONTS ;
 ;-------;
 
-font-0 = "consolas: style=Regular: size=12: antialias=true; 3"
+font-0 = "FiraCode: style=Regular: size=12: antialias=true; 3"
 font-1 = Hack Nerd Font:pixelsize=12;3
 font-2 = siji:pixelsize=10;1
 
@@ -140,7 +140,7 @@ bottom = true
 ; FONTS ;
 ;-------;
 
-font-0 = "consolas: style=Regular: size=12: antialias=true; 3"
+font-0 = "FiraCode: style=Regular: size=12: antialias=true; 3"
 font-1 = Hack Nerd Font:pixelsize=12;3
 font-2 = siji:pixelsize=10;1
 
@@ -247,6 +247,8 @@ label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
 label-indicator-underline = ${colors.secondary}
+
+format-foreground = ${colors.primary}
 
 [module/bluetooth]
 type = custom/script
@@ -377,7 +379,7 @@ label-foreground = ${colors.primary}
 [module/wlan]
 type = internal/network
 ; type to get a list of interfaces:  ip link show
-interface = wlp7s0
+interface = wlan0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
