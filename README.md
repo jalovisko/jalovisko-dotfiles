@@ -50,9 +50,9 @@ Just put everything (except for the `core` folder) from this repository to your 
 The `core` directory corresponds to the root `/` folder of a Linux filesystem. So, for example, `./core/etc/X11/` corresponds to `/etc/X11/` on your machine. The files in `core` are better to be not used unles you know what you are doing. They are needed mainly to enable support of laptops with two GPUs.
 
 ## Finalizing
-Add the user to the `input` group (to allow gestures when using a laptop):
+Add the user to the `input` (to allow gestures when using a laptop) and `plugdev` (to allow control over devices):
 ```bash
-sudo gpasswd -a $USER input
+sudo gpasswd -a $USER input,plugdev
 ```
 
 You may need to do some extra steps to make `i3lock-fancy-multimonitor` to
