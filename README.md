@@ -75,10 +75,15 @@ Install os-prober (`sudo pacman -S os-prober`) if you want Windows to be detecte
 # (requires os-prober installed)
 GRUB_DISABLE_OS_PROBER=false
 ```
+Installing NTFS-3G could help GRUB to find the Windows NTFS partition:
+```
+sudo pacman -S ntfs-3g
+```
 Then run
 ```
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
+
 
 ### Polybar audio sinks
 In Polybar, you will see the full name of your sink. You'd need to get the
